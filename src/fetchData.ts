@@ -26,12 +26,3 @@ async function fetchData(url: string): Promise<any> {
     return Promise.reject(error);
   }
 }
-
-// 使用範例
-fetchData("https://jsonplaceholder.typicode.com/todos/1")
-  .then((data) => {
-    console.log("Fetched data:", data);
-  })
-  .catch((error) => {
-    console.error("Error fetching data:", error);
-  });

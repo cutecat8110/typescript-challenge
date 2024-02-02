@@ -22,7 +22,7 @@ export function createShoppingCart() {
    */
   function getTotalPrice() {
     // 請在此處寫下你的程式碼
-    items.map((i) => i.price).reduce((a, b) => a + b, 0);
+    return items.map((i) => i.price).reduce((a, b) => a + b, 0);
   }
 
   function getItemCount() {

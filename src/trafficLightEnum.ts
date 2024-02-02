@@ -12,7 +12,7 @@ export enum TrafficLight {
   "Yellow" = "Yellow",
   "Green" = "Green",
 }
-export function getTrafficLightStatus(light: TrafficLight): TrafficLight {
+export function getTrafficLightStatus(light: TrafficLight): string {
   // 在此實現函式
-  return TrafficLight[light];
+  return `The traffic light is ${TrafficLight[light]}`;
 }
